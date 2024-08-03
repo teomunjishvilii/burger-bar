@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation {
+    display: none;
+  }
+
+  .burger_menu_icon {
+    display: block;
+  }
+
+  .header_wrapper .logo_and_nav_div .navigation {
+    position: absolute;
+    transform: translateY(-100%);
+    left: 50%;
+    z-index: 3;
+    transition: top 5s ease;
+  }
+
+  .header_wrapper .logo_and_nav_div .navigation.active {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header_wrapper .logo_and_nav_div .navigation nav ul {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .header_wrapper .logo_and_nav_div .navigation nav ul li a {
+    font-size: 28px;
+    color: #3d3c3a;
+  }
+}
