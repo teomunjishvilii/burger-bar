@@ -15,15 +15,15 @@
 
   .header_wrapper .logo_and_nav_div .navigation {
     position: absolute;
-    transform: translateY(-100%);
+    top: -100%;
     left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
-    transition: top 5s ease;
+    transition: top 0.5s ease;
   }
 
   .header_wrapper .logo_and_nav_div .navigation.active {
     top: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .header_wrapper .logo_and_nav_div .navigation nav ul {
@@ -34,5 +34,17 @@
   .header_wrapper .logo_and_nav_div .navigation nav ul li a {
     font-size: 28px;
     color: #3d3c3a;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .header_wrapper .logo_and_nav_div .navigation {
+    left: 27%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .header_wrapper .logo_and_nav_div .navigation {
+    left: 32%;
   }
 }
